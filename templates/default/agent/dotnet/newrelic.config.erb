@@ -65,7 +65,7 @@
   <applicationPools>
     <defaultBehavior instrument="<%= @resource.app_pools_instrument_default_behavior %>"/>
     <% @resource.app_pools.each do |pool| -%>
-    <applicationPool name="<%= pool.name %>" instrument="<%= pool.instrument %>"/>
+    <applicationPool name="<%= pool['name'] %>" instrument="<%= pool['instrument'] %>"/>
     <% end -%>
   </applicationPools>
   <% end -%>
